@@ -28,7 +28,7 @@ Since Mac OS no longer has an X client, you will need to install some tools firs
 > brew install socat
 
 Then, start socat:
-> socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
+> socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\\"$DISPLAY\\"
 
 And XQuartz:
 > open -a XQuartz
